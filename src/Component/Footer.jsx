@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='w-screen h-52 bg-cust-lightest-brown'>
+        <div className='w-screen h-52 bg-cust-darker-blue font-poppins text-cust-lightest-brown'>
             Ini Footer
         </div>
     )

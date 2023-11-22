@@ -9,14 +9,13 @@ module.exports = withMT({
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "cust-darkest-brown": "#3A220A",
-        "cust-darker-brown": "#774818",
-        "cust-lighter-brown": "#E1AA74",
-        "cust-lightest-brown": "#F3F0CA",
         "cust-darkest-blue": "#121B3B",
-        "cust-darker-blue": "#1D3178",
+        "cust-darker-blue": "#001767",
         "cust-lighter-blue": "#3876BF",
         "cust-lightest-blue": "#C3DFFF",
+        "cust-green": "#23B000",
+        "cust-red": "#BA0000",
+        "cust-orange": "#FF9900"
       },
       backgroundImage:{
         'dust' : `url("https://res.cloudinary.com/dr0lbokc5/image/upload/v1682158133/bg_VisiMisi.svg")`,
