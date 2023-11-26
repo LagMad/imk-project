@@ -24,7 +24,7 @@ const JadwalKuliah = () => {
         toggleDropdown();
     };
 
-    const [activeTab, setActiveTab] = useState('jadwal');
+    // const [activeTab, setActiveTab] = useState('jadwal');
 
     return (
         <div className='flex flex-col min-h-screen w-full justify-start items-center font-poppins gap-8 text-black'>

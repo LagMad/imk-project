@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import NotFound from './NotFound';
+// import NotFound from './NotFound';
 import Email from "../assets/Email.svg"
 import Instagram from "../assets/InstagramBlack.svg"
 import Twitter from "../assets/TwitterBlack.svg"
@@ -9,7 +9,7 @@ import ArrowLeft from '../assets/ArrowLeft1.svg';
 import ArrowRight from '../assets/ArrowRight1.svg';
 
 const Kontak = () => {
-    const [activeTab, setActiveTab] = useState('editProfile');
+    // const [activeTab, setActiveTab] = useState('editProfile');
 
     const arrowVariantsRight = {
         hover: {
@@ -38,7 +38,7 @@ const Kontak = () => {
             <div className='flex flex-col w-1/5 h-auto border-4 border-cust-darker-blue py-8 mt-32 text-xl font-normal justify-start items-center ml-44 rounded-3xl gap-10'>
                 <motion.button 
                     className='flex flex-row w-40 gap-1  group'
-                    onClick={() => setActiveTab('editProfile')}    
+                    // onClick={() => setActiveTab('editProfile')}    
                 >
                     <motion.div 
                         className='flex items-center'
@@ -59,7 +59,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-40 gap-1  group'
-                    onClick={() => setActiveTab('editProfile')}      
+                    // onClick={() => setActiveTab('editProfile')}      
                 >
                     <motion.div 
                         className='flex items-center'
@@ -80,7 +80,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-40 gap-1  group'
-                    onClick={() => setActiveTab('notifikasi')}      
+                    // onClick={() => setActiveTab('notifikasi')}      
                 >
                     <motion.div 
                         className='flex items-center'
@@ -101,7 +101,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-40 gap-1  group'
-                    onClick={() => setActiveTab('akses')}      
+                    // onClick={() => setActiveTab('akses')}      
                 >
                     <motion.div 
                         className='flex items-center'
