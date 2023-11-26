@@ -30,10 +30,10 @@ const Login = () => {
                         type='password'
                     />
                 </div>
-                <button className='h-12 bg-cust-darker-blue text-white rounded-lg w-[400px] mt-5'>
+                <button className='h-12 bg-cust-darker-blue text-white rounded-lg w-[400px] mt-5 font-semibold'>
                     Log In
                 </button>
-                <button className='flex flex-row h-12 bg-cust-darker-blue text-white rounded-lg w-[400px] justify-center items-center'>
+                <button className='flex flex-row h-12 bg-cust-darker-blue text-white rounded-lg w-[400px] justify-center items-center font-semibold'>
                     <img 
                         className='h-8'
                         src={Google}

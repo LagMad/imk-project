@@ -8,7 +8,7 @@ const HomeNoLogin = () => {
                     <div className='text-3xl font-extrabold'>
                         Selamat Datang, Orang Tua!
                     </div>
-                    <div className=''>
+                    <div className='font-semibold'>
                         Your Children’s Future <span className='font-black'>Is In Your Hand.</span>
                         <br />
                         Pilih Login atau Sign Up Untuk Memulai!
@@ -24,7 +24,7 @@ const HomeNoLogin = () => {
                 </div>
                 <div className='w-1/2 h-96 bg-laptop bg-no-repeat bg-cover bg-center rounded-3xl'/>
             </div>
-            <div className='my-20 mx-52'>
+            <div className='my-20 mx-52 font-semibold'>
                 Parent Link adalah sebuah situs website yang memungkinkan Anda sebagai orang tua untuk memamantau perkembangan anak Anda selama berproses di Universitas Brawijaya. 
             </div>
         </div>

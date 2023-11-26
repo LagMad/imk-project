@@ -7,7 +7,7 @@ const Tentang = () => {
                 <div className='text-3xl font-black'>
                     Tentang Website
                 </div>
-                <div className=''>
+                <div className='font-semibold'>
                     Selamat datang di Parent Link, tempat terbaik bagi orangtua yang ingin tetap terhubung dengan perkembangan akademis anak-anak mereka. Kami menyediakan platform yang intuitif dan informatif untuk memantau jadwal kuliah, absensi, tugas, dan pengumuman penting, memberi Anda akses langsung ke dunia akademis mereka.
                 </div>
             </div>
@@ -17,24 +17,24 @@ const Tentang = () => {
                     <div className='bg-cust-darker-blue font-extrabold text-white rounded-3xl py-10 w-full text-3xl'>
                         &copy; Parent<span className='text-cust-orange italic font-black'>Link</span>
                     </div>
-                    <div className='text-left mt-4'>
+                    <div className='text-left mt-4 font-semibold text-lg'>
                         Pengumuman. Dapatkan pemberitahuan terkini dengan menjelajahi bagian "Pengumuman". Informasi penting seputar acara, perubahan jadwal, dan berita akademis lainnya dapat ditemukan di sini.
                     </div>
                 </div>
                 <div className='flex flex-col w-80 justify-center items-center my-auto'>
-                    <div className='text-left mb-4'>
+                    <div className='text-left mb-4 font-semibold text-lg'>
                         Jadwal Kuliah. Temukan jadwal kuliah anak Anda dengan mudah. Klik pada bagian "Jadwal Kuliah" di Akademik untuk melihat detail waktu dan tempat kuliah mereka.
                     </div>
-                    <div className='h-32 bg-books font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-bottom bg-no-repeat'/>
+                    <div className='h-32 bg-books font-extrabold text-white rounded-3xl w-full bg-cover bg-bottom bg-no-repeat'/>
                 </div>
                 <div className='flex flex-col w-80 justify-center items-center my-auto'>
                     <div className='h-32 bg-contact font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-center bg-no-repeat'/>
-                    <div className='text-left mt-4'>
+                    <div className='text-left mt-4 font-semibold text-lg'>
                         Absensi. Cek kehadiran anak Anda melalui opsi "Absensi" di Akademik. Informasi ini membantu Anda melacak keteraturan kehadiran mereka di setiap sesi kuliah.
                     </div>
                 </div>
                 <div className='flex flex-col w-80 justify-center items-center my-auto'>
-                    <div className='text-left mb-4'>
+                    <div className='text-left mb-4 font-semibold text-lg'>
                         Tugas. Untuk mengecek tugas yang perlu dikerjakan anak Anda, kunjungi bagian "Tugas" di bagian Akademik. Informasi tentang tenggat waktu, deskripsi tugas, dan status pengerjaan dapat ditemukan di sini.
                     </div>
                     <div className='h-32 bg-books font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-bottom bg-no-repeat'/>

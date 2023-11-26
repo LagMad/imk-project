@@ -9,6 +9,11 @@ import Login from "./Views/Login.jsx";
 import SignUp from "./Views/SignUp.jsx";
 import ForgetPass from "./Views/ForgetPass.jsx";
 import Tentang from "./Views/Tentang.jsx";
+import NotFound from "./Views/NotFound.jsx";
+import Biodata from "./Views/Biodata.jsx";
+import Pengaturan from "./Views/Pengaturan.jsx";
+import Akademik from "./Views/Akademik.jsx";
+import Kontak from "./Views/Kontak.jsx";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -31,6 +36,11 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp/>} />
         <Route path="/forget-pass" element={<ForgetPass/>} />
         <Route path="/tentang" element={<Tentang/>} />
+        <Route path="/biodata" element={<Biodata/>} />
+        <Route path="/pengaturan" element={<Pengaturan/>} />
+        <Route path="/akademik" element={<Akademik/>} />
+        <Route path="/kontak" element={<Kontak/>} />
+        <Route path="/*" element={<NotFound/>} />
       </Routes>
       <Footer/>
     </Router>

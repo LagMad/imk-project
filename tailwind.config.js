@@ -24,6 +24,7 @@ module.exports = withMT({
         'contact': `url("../../imk-project/src/assets/ContactUs.png")`,
         'laptop': `url("../../imk-project/src/assets/laptop.png")`,
         'profile': `url("../../imk-project/src/assets/profile.svg")`,
+        'not-found': `url("../../imk-project/src/assets/NotFound.svg")`,
       },
     },
   },
