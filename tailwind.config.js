@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
@@ -9,7 +10,7 @@ module.exports = withMT({
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "cust-darkest-blue": "#121B3B",
+        "cust-darkest-blue": "#000C39",
         "cust-darker-blue": "#001767",
         "cust-lighter-blue": "#3876BF",
         "cust-lightest-blue": "#C3DFFF",
@@ -19,6 +20,10 @@ module.exports = withMT({
       },
       backgroundImage:{
         'dust' : `url("https://res.cloudinary.com/dr0lbokc5/image/upload/v1682158133/bg_VisiMisi.svg")`,
+        'books': `url("../../imk-project/src/assets/Books.png")`,
+        'contact': `url("../../imk-project/src/assets/ContactUs.png")`,
+        'laptop': `url("../../imk-project/src/assets/laptop.png")`,
+        'profile': `url("../../imk-project/src/assets/profile.svg")`,
       },
     },
   },

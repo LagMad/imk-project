@@ -4,6 +4,11 @@ import React, { useEffect } from "react";
 import Home from "../src/Views/Home.jsx"
 import NavBar from "./Component/NavBar.jsx";
 import Footer from "./Component/Footer.jsx";
+import HomeNoLogin from "./Views/HomeNoLogin.jsx";
+import Login from "./Views/Login.jsx";
+import SignUp from "./Views/SignUp.jsx";
+import ForgetPass from "./Views/ForgetPass.jsx";
+import Tentang from "./Views/Tentang.jsx";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -21,6 +26,11 @@ const App = () => {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/no-login" element={<HomeNoLogin/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/sign-up" element={<SignUp/>} />
+        <Route path="/forget-pass" element={<ForgetPass/>} />
+        <Route path="/tentang" element={<Tentang/>} />
       </Routes>
       <Footer/>
     </Router>
