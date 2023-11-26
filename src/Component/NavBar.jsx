@@ -4,7 +4,7 @@ import Profile from '../assets/profile.svg';
 
 const NavBar = () => {
     return (
-        <div className='flex flex-row fixed justify-center items-center text-center min-w-full h-20 bg-cust-darker-blue drop-shadow-2xl text-white font-poppins'>
+        <div className='flex flex-row fixed justify-center items-center text-center min-w-full h-20 bg-cust-darker-blue drop-shadow-2xl text-white font-poppins mx-auto'>
             <div className='w-1/4 font-extrabold text-2xl mx-auto'>
                 Parent<span className='text-cust-orange italic font-black'>Link</span>
             </div>
@@ -26,13 +26,16 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className='flex w-1/4 rounded-full justify-center items-center'>
-                <button className='flex rounded-full justify-center items-center mx-auto bg-white p-3'>
-                <img
-                    className='h-6'
-                    src={Profile}
-                    alt='missing img'
-                />
-                </button>
+                <Link to="/pengaturan" className='relative flex rounded-full justify-center items-center mx-auto bg-white p-3'>
+                    <img
+                        className='h-6'
+                        src={Profile}
+                        alt='missing img'
+                    />
+                    <div className='absolute right-[48px] w-44 overflow-hidden'>
+                        Mazda RX8
+                    </div>
+                </Link>
             </div>
         </div>
     );
