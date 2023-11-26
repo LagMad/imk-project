@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
@@ -9,17 +10,21 @@ module.exports = withMT({
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "cust-darkest-brown": "#3A220A",
-        "cust-darker-brown": "#774818",
-        "cust-lighter-brown": "#E1AA74",
-        "cust-lightest-brown": "#F3F0CA",
-        "cust-darkest-blue": "#121B3B",
-        "cust-darker-blue": "#1D3178",
+        "cust-darkest-blue": "#000C39",
+        "cust-darker-blue": "#001767",
         "cust-lighter-blue": "#3876BF",
         "cust-lightest-blue": "#C3DFFF",
+        "cust-green": "#23B000",
+        "cust-red": "#BA0000",
+        "cust-orange": "#FF9900"
       },
       backgroundImage:{
         'dust' : `url("https://res.cloudinary.com/dr0lbokc5/image/upload/v1682158133/bg_VisiMisi.svg")`,
+        'books': `url("../../imk-project/src/assets/Books.png")`,
+        'contact': `url("../../imk-project/src/assets/ContactUs.png")`,
+        'laptop': `url("../../imk-project/src/assets/laptop.png")`,
+        'profile': `url("../../imk-project/src/assets/profile.svg")`,
+        'not-found': `url("../../imk-project/src/assets/NotFound.svg")`,
       },
     },
   },
