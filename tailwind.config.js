@@ -20,7 +20,6 @@ module.exports = withMT({
       },
       backgroundImage:{
         'dust' : `url("https://res.cloudinary.com/dr0lbokc5/image/upload/v1682158133/bg_VisiMisi.svg")`,
-        'contact': `url("../../imk-project/src/assets/ContactUs.png")`,
         'laptop': `url("../../imk-project/src/assets/laptop.png")`,
         'profile': `url("../../imk-project/src/assets/profile.svg")`,
         'not-found': `url("../../imk-project/src/assets/NotFound.svg")`,

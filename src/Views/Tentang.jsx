@@ -28,7 +28,7 @@ const Tentang = () => {
                     <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl w-full bg-cover bg-bottom bg-no-repeat'/>
                 </div>
                 <div className='flex flex-col w-80 justify-center items-center my-auto'>
-                    <div className='h-32 bg-contact font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-center bg-no-repeat'/>
+                    <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-center bg-no-repeat'/>
                     <div className='text-left mt-4 font-semibold text-lg'>
                         Absensi. Cek kehadiran anak Anda melalui opsi "Absensi" di Akademik. Informasi ini membantu Anda melacak keteraturan kehadiran mereka di setiap sesi kuliah.
                     </div>

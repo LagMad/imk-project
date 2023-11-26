@@ -34,7 +34,7 @@ const Home = () => {
                     <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl text-3xl bg-cover bg-bottom bg-no-repeat'/>
                 </div>
                 <div className='flex-col w-80 h-72 justify-center items-center my-auto'>
-                    <div className='h-32 bg-contact font-extrabold text-white rounded-3xl text-3xl bg-cover bg-center bg-no-repeat'/>
+                    <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl text-3xl bg-cover bg-center bg-no-repeat'/>
                     <div className='text-left mt-4 font-semibold'>
                         Hubungi kami untuk pertanyaan, umpan balik, atau dukungan teknis. Kami di sini untuk membantu!
                     </div>
