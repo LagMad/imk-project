@@ -25,7 +25,7 @@ const Tentang = () => {
                     <div className='text-left mb-4 font-semibold text-lg'>
                         Jadwal Kuliah. Temukan jadwal kuliah anak Anda dengan mudah. Klik pada bagian "Jadwal Kuliah" di Akademik untuk melihat detail waktu dan tempat kuliah mereka.
                     </div>
-                    <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl w-full bg-cover bg-bottom bg-no-repeat'/>
+                    <div className='h-32 bg-books font-extrabold text-white rounded-3xl w-full bg-cover bg-bottom bg-no-repeat'/>
                 </div>
                 <div className='flex flex-col w-80 justify-center items-center my-auto'>
                     <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-center bg-no-repeat'/>
@@ -37,7 +37,7 @@ const Tentang = () => {
                     <div className='text-left mb-4 font-semibold text-lg'>
                         Tugas. Untuk mengecek tugas yang perlu dikerjakan anak Anda, kunjungi bagian "Tugas" di bagian Akademik. Informasi tentang tenggat waktu, deskripsi tugas, dan status pengerjaan dapat ditemukan di sini.
                     </div>
-                    <div className='h-32 bg-laptop font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-bottom bg-no-repeat'/>
+                    <div className='h-32 bg-books font-extrabold text-white rounded-3xl w-full text-3xl bg-cover bg-bottom bg-no-repeat'/>
                 </div>
             </div>
         </div>
