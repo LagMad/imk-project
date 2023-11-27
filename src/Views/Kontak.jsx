@@ -34,14 +34,14 @@ const Kontak = () => {
     };
 
     return (
-        <div className='flex flex-row min-h-screen w-full justify-start items-start font-poppins'>
-            <div className='flex flex-col w-1/5 h-auto border-4 border-cust-darker-blue py-8 mt-32 text-xl font-normal justify-start items-center ml-44 rounded-3xl gap-10'>
+        <div className='flex flex-col sm:flex-row min-h-screen w-full justify-start sm:justify-start items-center sm:items-start font-poppins'>
+            <div className='flex flex-row sm:flex-col w-[95vw] sm:w-1/5 h-auto border-4 border-cust-darker-blue py-8 mt-24 sm:mt-32 text-sm sm:text-xl font-normal justify-center sm:justify-start items-center ml-0 sm:ml-44 rounded-3xl gap-0 sm:gap-10'>
                 <motion.button 
-                    className='flex flex-row w-40 gap-1  group'
+                    className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
                     // onClick={() => setActiveTab('editProfile')}    
                 >
                     <motion.div 
-                        className='flex items-center'
+                        className='hidden sm:inline items-center'
                         whileHover={{ x: -10 }}
                     >
                         <motion.img
@@ -51,18 +51,18 @@ const Kontak = () => {
                         />
                     </motion.div>
                     <motion.div 
-                        className="pl-2 "
-                        whileHover={{ x: 10 }}
+                        className="pl-0 sm:pl-2 "
+                        whileHover={window.innerWidth >= 540 ? { x: 10 } : { y: -10}}
                     >
                         Email
                     </motion.div>
                 </motion.button>
                 <motion.button 
-                    className='flex flex-row w-40 gap-1  group'
+                    className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
                     // onClick={() => setActiveTab('editProfile')}      
                 >
                     <motion.div 
-                        className='flex items-center'
+                        className='hidden sm:inline items-center'
                         whileHover={{ x: -10 }}
                     >
                         <motion.img
@@ -72,18 +72,18 @@ const Kontak = () => {
                         />
                     </motion.div>
                     <motion.div 
-                        className="pl-2 "
-                        whileHover={{ x: 10 }}
+                        className="pl-0 sm:pl-2 "
+                        whileHover={window.innerWidth >= 540 ? { x: 10 } : { y: -10}}
                     >
                         Instagram
                     </motion.div>
                 </motion.button>
                 <motion.button 
-                    className='flex flex-row w-40 gap-1  group'
+                    className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
                     // onClick={() => setActiveTab('notifikasi')}      
                 >
                     <motion.div 
-                        className='flex items-center'
+                        className='hidden sm:inline items-center'
                         whileHover={{ x: -10 }}
                     >
                         <motion.img
@@ -93,18 +93,18 @@ const Kontak = () => {
                         />
                     </motion.div>
                     <motion.div 
-                        className="pl-2 "
-                        whileHover={{ x: 10 }}
+                        className="pl-0 sm:pl-2 "
+                        whileHover={window.innerWidth >= 540 ? { x: 10 } : { y: -10}}
                     >
                         Twitter
                     </motion.div>
                 </motion.button>
                 <motion.button 
-                    className='flex flex-row w-40 gap-1  group'
+                    className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
                     // onClick={() => setActiveTab('akses')}      
                 >
                     <motion.div 
-                        className='flex items-center'
+                        className='hidden sm:inline items-center'
                         whileHover={{ x: -10 }}
                     >
                         <motion.img
@@ -114,42 +114,42 @@ const Kontak = () => {
                         />
                     </motion.div>
                     <motion.div 
-                        className="pl-2 "
-                        whileHover={{ x: 10 }}
+                        className="pl-0 sm:pl-2 "
+                        whileHover={window.innerWidth >= 540 ? { x: 10 } : { y: -10}}
                     >
                         Website
                     </motion.div>
                 </motion.button>
             </div>
-            <div className='flex flex-col min-h-screen w-full justify-start items-center font-poppins gap-8 text-black mt-32'>
-                <div className='flex flex-col gap-8 w-[900px] justify-start items-center text-center'>
-                    <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[700px] text-center py-2 text-4xl'>
+            <div className='flex flex-col w-full justify-start items-center font-poppins gap-8 text-black mt-5 sm:mt-32'>
+                <div className='flex flex-col gap-8 w-[95vw] sm:w-[900px] justify-start items-center text-center'>
+                    <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[95vw] sm:w-[700px] text-center py-2 text-4xl'>
                     CONTACT US
                     </div>
-                    <div className='flex flex-row gap-6'>
-                    <motion.div
-                        className='flex rounded-full justify-center items-center mx-auto bg-cust-darker-blue hover:bg-cust-orange my-auto p-3'
-                        whileHover="hover"
-                        variants={arrowVariantsLeft}
-                    >
-                        <img className='h-6' src={ArrowLeft} alt='missing img' />
-                    </motion.div>
-                    <div className='w-[700px] text-xl font-normal text-center border-2 border-cust-darker-blue rounded-3xl p-4'>
-                        Email
-                        <br/>
-                        Instagram
-                        <br/>
-                        Twitter
-                        <br/>
-                        Website
-                    </div>
-                    <motion.div
-                        className='flex rounded-full justify-center items-center mx-auto bg-cust-darker-blue hover:bg-cust-orange my-auto p-3'
-                        whileHover="hover"
-                        variants={arrowVariantsRight}
-                    >
-                        <img className='h-6' src={ArrowRight} alt='missing img' />
-                    </motion.div>
+                    <div className='flex flex-row gap-6 w-[95vw] sm:w-full'>
+                        <motion.div
+                            className='flex rounded-full justify-center items-center mx-auto bg-cust-darker-blue hover:bg-cust-orange my-auto p-3'
+                            whileHover="hover"
+                            variants={arrowVariantsLeft}
+                        >
+                            <img className='h-6' src={ArrowLeft} alt='missing img' />
+                        </motion.div>
+                        <div className='w-[700px] text-xl font-normal text-center border-2 border-cust-darker-blue rounded-3xl p-4'>
+                            Email
+                            <br/>
+                            Instagram
+                            <br/>
+                            Twitter
+                            <br/>
+                            Website
+                        </div>
+                        <motion.div
+                            className='flex rounded-full justify-center items-center mx-auto bg-cust-darker-blue hover:bg-cust-orange my-auto p-3'
+                            whileHover="hover"
+                            variants={arrowVariantsRight}
+                        >
+                            <img className='h-6' src={ArrowRight} alt='missing img' />
+                        </motion.div>
                     </div>
                 </div>
             </div>

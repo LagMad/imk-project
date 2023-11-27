@@ -13,12 +13,12 @@ const NotFound = () => {
     return (
         <div className='flex flex-col h-screen min-w-full font-poppins font-bold text-center justify-center items-center gap-10 bg-not-found bg-no-repeat bg-cover bg-center'>
             <motion.div 
-                className='text-2xl bg-black backdrop-blur-sm bg-opacity-30 py-10 px-20 heartbeat rainbow-text'
+                className='text-sm sm:text-2xl bg-black backdrop-blur-sm bg-opacity-30 py-10 px sm:px-20 heartbeat rainbow-text'
                 initial={{ scale: 1, color: rainbowColors[0] }}
                 animate={{ scale: [1, 1.1, 1], color: rainbowColors }}
                 transition={{ duration: 2, repeat: Infinity, ease: [0.42, 0, 0.58, 1]}}
             >
-                <div className='text-9xl'>
+                <div className='text-7xl sm:text-9xl'>
                     404 NOT FOUND
                 </div>   
                 Yaahhh ga ada banh coba linknya minimal yang bener lah

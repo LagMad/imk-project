@@ -2,11 +2,11 @@ import React from 'react'
 
 const EditProfile = () => {
     return (
-        <div className='flex flex-col min-h-screen w-full justify-start items-center font-poppins'>
-            <div className='font-bold w-[700px] text-4xl text-center mb-10'>
+        <div className='flex flex-col w-full justify-start items-center font-poppins'>
+            <div className='font-bold w-[95vw] sm:w-[700px] text-3xl sm:text-4xl text-center mb-10'>
                 Edit Profil
             </div>
-            <div className='flex flex-col w-[700px] justify-center items-center text-lg gap-5 mx-auto'>
+            <div className='flex flex-col w-[95vw] sm:w-[700px] justify-center items-center text-lg gap-5 mx-auto'>
                 <div className='flex flex-row w-full font-semibold gap-10 justify-center items-center'>
                     <div className='flex-col w-1/2 self-start'>
                         <div className=''>

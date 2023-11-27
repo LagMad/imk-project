@@ -8,7 +8,7 @@ const Absensi = () => {
     ];
 
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedMatKul, setSelectedMatKul] = useState('Pilih Mata Kuliah');
+    const [selectedMatKul, setSelectedMatKul] = useState('Pilih Presensi');
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -20,16 +20,16 @@ const Absensi = () => {
     };
 
     return (
-        <div className='flex flex-col min-h-screen w-full justify-start items-center font-poppins gap-8 text-black'>
-            <div className='flex flex-col gap-8 w-[1000px] justify-start items-center text-center'>
-                <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[700px] text-center py-2 text-4xl'>
+        <div className='flex flex-col h-auto w-full justify-start items-center font-poppins gap-8 text-black'>
+            <div className='flex flex-col gap-8 w-[95vw] sm:w-[900px] justify-start items-center text-center'>
+                <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[95vw] sm:w-[700px] text-center py-2 text-4xl'>
                     ABSENSI
                 </div>
-                <div className='text-xl font-normal text-left'>
+                <div className='text-md sm:text-xl font-normal text-left'>
                     <div className='relative flex flex-row justify-center items-center'>
                         <button
                         onClick={toggleDropdown}
-                        className='relative flex flex-row bg-cust-darker-blue text-white w-80 ml-5 pr-5 py-2 rounded focus:outline-none justify-end items-center text-xl'
+                        className='relative flex flex-row bg-cust-darker-blue text-white w-48 sm:w-80 ml-5 pr-5 py-2 rounded focus:outline-none justify-end items-center text-md sm:text-xl'
                         >
                         {selectedMatKul}
                         <img
@@ -38,7 +38,7 @@ const Absensi = () => {
                             alt='missing img'
                         />
                         {isOpen && (
-                            <div className='absolute -bottom-[90px] left-0 mt-2 w-80 text-black bg-white border rounded shadow-lg'>
+                            <div className='absolute -bottom-[130px] sm:-bottom-[90px] left-0 mt-2 w-48 sm:w-80 text-black bg-white border rounded shadow-lg'>
                             {/* Dropdown content goes here */}
                             <ul>
                                 <li
@@ -59,7 +59,7 @@ const Absensi = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex text-black w-full">
+                <div className="flex text-black w-full overflow-x-scroll sm:overflow-auto text-sm sm:text-xl mb-10 sm:mb-0">
                     <table className="w-full border-black border-2 border-collapse">
                         <thead>
                             <tr className="bg-cust-darker-blue text-white">

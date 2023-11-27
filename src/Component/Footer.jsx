@@ -3,8 +3,11 @@ import Instagram from '../assets/instagram.svg'
 import Tiktok from '../assets/tiktok.svg'
 import Twitter from '../assets/twitter.svg'
 import { motion } from "framer-motion";
+import {  useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <motion.div 
             className=' min-w-full h-auto bg-cust-darker-blue font-poppins text-white justify-center items-center pt-0 sm:pt-12 pb-5 drop-shadow-2xl'
@@ -29,41 +32,89 @@ const Footer = () => {
                         FOLLOW US ON
                     </div>
                     <div className='flex flex-row gap-4'>
-                        <button className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'>
+                        <motion.button 
+                            className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'
+                            initial={{scale: 1}}
+                            whileHover={{
+                                scale: 1.2, 
+                                transition: { 
+                                    type: 'spring', 
+                                    stiffness: 300, 
+                                    damping: 25 
+                                } 
+                            }}
+                            type='button'
+                        >
                             <img
                                 className='h-8 self-center mx-auto my-auto mt-1'
                                 src={Instagram}
                                 alt='missing img'
                             />
-                        </button>
-                        <button className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'>
+                        </motion.button>
+                        <motion.button 
+                            className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'                            
+                            initial={{scale: 1}}
+                            whileHover={{
+                                scale: 1.2, 
+                                transition: { 
+                                    type: 'spring', 
+                                    stiffness: 300, 
+                                    damping: 25 
+                                } 
+                            }}
+                            type='button'
+                        >
                             <img
                                 className='h-8 self-center mx-auto my-auto'
                                 src={Tiktok}
                                 alt='missing img'
                             />
-                        </button>
-                        <button className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'>
+                        </motion.button>
+                        <motion.button 
+                            className='bg-white rounded-full h-12 w-12 justify-center items-center mx-auto my-auto'
+                            initial={{scale: 1}}
+                            whileHover={{
+                                scale: 1.2, 
+                                transition: { 
+                                    type: 'spring', 
+                                    stiffness: 300, 
+                                    damping: 25 
+                                } 
+                            }}
+                            type='button'
+                        >
                             <img
                                 className='h-7 self-center mx-auto my-auto mt-1'
                                 src={Twitter}
                                 alt='missing img'
                             />
-                        </button>
+                        </motion.button>
                     </div>
                 </div>
                 <div className='flex flex-col text-right mx-auto font-bold text-lg sm:text-xl self-center justify-center items-right'>
                     TAUTAN TERKAIT
-                    <button className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'>
+                    <button 
+                        className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'
+                        onClick={() => navigate('/')}
+                        >
                         Home
                     </button>
-                    <button className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'>
+                    <button 
+                        className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'
+                        onClick={() => navigate('/tentang')}
+                    >
                         Tentang
                     </button>
-                    <button className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'>
+                    <button 
+                        className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'
+                        onClick={() => navigate('/akademik')}
+                    >
                         Akademik
                     </button>
-                    <button className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'>
+                    <button 
+                        className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'
+                        onClick={() => navigate('/kontak')}
+                    >
                         Kontak
                     </button>
                 </div>

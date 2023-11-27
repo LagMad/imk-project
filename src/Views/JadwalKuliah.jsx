@@ -28,16 +28,16 @@ const JadwalKuliah = () => {
 
     return (
         <div className='flex flex-col min-h-screen w-full justify-start items-center font-poppins gap-8 text-black'>
-            <div className='flex flex-col gap-8 w-[1000px] justify-start items-center text-center'>
-                <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[700px] text-center py-2 text-4xl'>
+            <div className='flex flex-col gap-8 w-[95vw] sm:w-[900px] justify-start items-center text-center'>
+                <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[95vw] sm:w-[700px] text-center py-2 text-4xl'>
                 JADWAL KULIAH
                 </div>
-                <div className='text-xl font-normal text-left'>
-                    <div className='relative flex flex-row justify-center items-center'>
+                <div className='text-md sm:text-xl font-normal text-left'>
+                    <div className='relative flex flex-row justify-center items-center '>
                         Semester :
                         <button
                         onClick={toggleDropdown}
-                        className='relative flex flex-row bg-cust-darker-blue text-white w-52 ml-5 pr-5 py-2 rounded focus:outline-none justify-end items-center text-xl'
+                        className='relative flex flex-row bg-cust-darker-blue text-white w-48 sm:w-52 ml-5 pr-5 py-2 rounded focus:outline-none justify-end items-center text-md sm:text-xl'
                         >
                         {selectedSemester}
                         <img
@@ -46,7 +46,7 @@ const JadwalKuliah = () => {
                             alt='missing img'
                         />
                         {isOpen && (
-                            <div className='absolute -bottom-[134px] left-0 mt-2 w-52 text-black bg-white border rounded shadow-lg'>
+                            <div className='absolute -bottom-[134px] left-0 mt-2 w-48 sm:w-52 text-black bg-white border rounded shadow-lg'>
                             {/* Dropdown content goes here */}
                             <ul>
                                 <li
@@ -73,7 +73,7 @@ const JadwalKuliah = () => {
                         </button>
                     </div>
                 </div>
-                <div className="flex text-black w-full">
+                <div className="flex text-black w-full overflow-x-scroll sm:overflow-auto text-sm sm:text-xl">
                     <table className="w-full border-black border-2 border-collapse">
                         <thead>
                             <tr className="bg-cust-darker-blue text-white">
