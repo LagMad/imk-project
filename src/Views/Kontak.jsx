@@ -54,7 +54,7 @@ const Kontak = () => {
                         className="pl-2 "
                         whileHover={{ x: 10 }}
                     >
-                        Pengaturan
+                        Email
                     </motion.div>
                 </motion.button>
                 <motion.button 
@@ -75,7 +75,7 @@ const Kontak = () => {
                         className="pl-2 "
                         whileHover={{ x: 10 }}
                     >
-                        Edit Profil
+                        Instagram
                     </motion.div>
                 </motion.button>
                 <motion.button 
@@ -96,7 +96,7 @@ const Kontak = () => {
                         className="pl-2 "
                         whileHover={{ x: 10 }}
                     >
-                        Notifikasi
+                        Twitter
                     </motion.div>
                 </motion.button>
                 <motion.button 
@@ -117,7 +117,7 @@ const Kontak = () => {
                         className="pl-2 "
                         whileHover={{ x: 10 }}
                     >
-                        Akses
+                        Website
                     </motion.div>
                 </motion.button>
             </div>

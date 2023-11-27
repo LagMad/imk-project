@@ -14,6 +14,7 @@ import Biodata from "./Views/Biodata.jsx";
 import Pengaturan from "./Views/Pengaturan.jsx";
 import Akademik from "./Views/Akademik.jsx";
 import Kontak from "./Views/Kontak.jsx";
+import Test from "./Views/Test.jsx";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/test" element={<Test/>} />
         <Route path="/no-login" element={<HomeNoLogin/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/sign-up" element={<SignUp/>} />
