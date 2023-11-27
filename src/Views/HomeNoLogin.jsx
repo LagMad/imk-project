@@ -45,6 +45,12 @@ const HomeNoLogin = () => {
             <div className='my-20 mx-10 sm:mx-52 font-semibold'>
                 Parent Link adalah sebuah situs website yang memungkinkan Anda sebagai orang tua untuk memamantau perkembangan anak Anda selama berproses di Universitas Brawijaya. 
             </div>
+            <button 
+                className='border-2 bg-transparent hover:bg-cust-orange active:bg-cust-orange border-black hover:border-cust-orange active:border-cust-orange rounded-full py-1 w-36 font-extrabold text-black hover:text-white active:text-white mb-10'
+                onClick={() => navigate('/')}
+            >
+                ALT HOME
+            </button>
         </div>
     )
 }
