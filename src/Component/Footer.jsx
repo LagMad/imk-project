@@ -21,11 +21,11 @@ const Footer = () => {
             }}
         >
             <div className='flex flex-col sm:flex-row justify-center items-center'>
-                <div className='font-extrabold text-2xl mx-auto mb-10 sm:mb-0 mt-10 sm:mt-0'>
+                <div className='font-extrabold text-lg sm:text-2xl mx-auto mb-10 sm:mb-0 mt-10 sm:mt-0'>
                     Parent<span className='text-cust-orange italic font-black'>Link</span>
                 </div>
                 <div className='flex flex-col mx-auto mb-10 sm:mb-0'>
-                    <div className='font-semibold text-center mb-1 sm:mb-2 text-xl'>
+                    <div className='font-semibold text-center mb-2 text-lg sm:text-xl'>
                         FOLLOW US ON
                     </div>
                     <div className='flex flex-row gap-4'>
@@ -52,7 +52,7 @@ const Footer = () => {
                         </button>
                     </div>
                 </div>
-                <div className='flex flex-col text-right mx-auto font-bold text-xl self-center justify-center items-right'>
+                <div className='flex flex-col text-right mx-auto font-bold text-lg sm:text-xl self-center justify-center items-right'>
                     TAUTAN TERKAIT
                     <button className='font-medium text-md sm:text-lg text-center sm:text-right text-white hover:text-cust-orange active:text-cust-orange hover:font-bold active:font-bold'>
                         Home
