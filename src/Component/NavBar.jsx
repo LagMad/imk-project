@@ -1,30 +1,16 @@
 import React, { useState } from 'react';
-import ArrowDown from '../assets/ArrowDown.svg';
-import { Link, useNavigate } from 'react-router-dom';
+
+import {  useNavigate } from 'react-router-dom';
 import Profile from '../assets/profile.svg';
 
 const NavBar = () => {
-    const jadwalData = [
-        { hari: "Selasa", jam: "09:30 - 12:00", matkul: 'Jaringan Komputer', kelas: "TIF-G", dosen: "Pak Jono" },
-        { hari: "Rabu", jam: "13:00 - 15:30", matkul: 'Pemrograman Web', kelas: "TIF-H", dosen: "Ibu Rina" },
-        { hari: "Kamis", jam: "10:00 - 11:30", matkul: 'Basis Data', kelas: "TIF-A", dosen: "Pak Budi" },
-        { hari: "Jumat", jam: "08:00 - 10:30", matkul: 'Sistem Operasi', kelas: "TIF-C", dosen: "Ibu Sarah" },
-        { hari: "Senin", jam: "15:00 - 17:30", matkul: 'Algoritma dan Struktur Data', kelas: "TIF-D", dosen: "Pak Andi" },
-        { hari: "Selasa", jam: "13:30 - 15:00", matkul: 'Pemrograman Mobile', kelas: "TIF-E", dosen: "Ibu Maya" },
-    ];
     
     const navigate = useNavigate();
 
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedSemester, setSelectedSemester] = useState('Pilih Semester');
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
-    };
-
-    const handleSemesterSelect = (semester) => {
-        setSelectedSemester(semester);
-        toggleDropdown();
     };
 
     return (
@@ -36,7 +22,7 @@ const NavBar = () => {
                 Parent<span className='text-cust-orange italic font-black'>Link</span>
             </button>
             <div className='w-1/2 flex-row justify-center items-center mx-auto space-x-4'>
-                <button onClick={() => navigate('/')} className='hover:bg-cust-orange active:bg-cust-orange rounded-lg py-1 px-4 font-semibold text-xl mx-auto'>
+                <button onClick={() => navigate('/')} className='hover:bg-cust-orange active:bg-cust-orange rounded-lg py-1 px-4 font-semibold text-xl mx-auto '>
                     Home
                 </button>
                 <button onClick={() => navigate('/tentang')} className='hover:bg-cust-orange active:bg-cust-orange rounded-lg py-1 px-4 font-semibold text-xl'>
@@ -87,33 +73,33 @@ const NavBar = () => {
                                 </li>
                                 <li
                                     onClick={() => navigate('/')}
-                                    className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer block sm:hidden'
+                                    className='py-2 px-4 hover:bg-cust-orange hover:text-white cursor-pointer block sm:hidden'
                                 >
-                                    Sign Out
+                                    Home
+                                </li>
+                                <li
+                                    onClick={() => navigate('/tentang')}
+                                    className='py-2 px-4 hover:bg-cust-orange hover:text-white cursor-pointer block sm:hidden'
+                                >
+                                    Tentang
+                                </li>
+                                <li
+                                    onClick={() => navigate('/akademik')}
+                                    className='py-2 px-4 hover:bg-cust-orange hover:text-white cursor-pointer block sm:hidden'
+                                >
+                                    Akademik
+                                </li>
+                                <li
+                                    onClick={() => navigate('/kontak')}
+                                    className='py-2 px-4 hover:bg-cust-orange hover:text-white cursor-pointer block sm:hidden'
+                                >
+                                    Kontak
                                 </li>
                                 <li
                                     onClick={() => navigate('/')}
-                                    className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer block sm:hidden'
+                                    className='py-2 px-4 hover:bg-cust-orange hover:text-white cursor-pointer block sm:hidden'
                                 >
-                                    Sign Out
-                                </li>
-                                <li
-                                    onClick={() => navigate('/')}
-                                    className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer block sm:hidden'
-                                >
-                                    Sign Out
-                                </li>
-                                <li
-                                    onClick={() => navigate('/')}
-                                    className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer block sm:hidden'
-                                >
-                                    Sign Out
-                                </li>
-                                <li
-                                    onClick={() => navigate('/')}
-                                    className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer block sm:hidden'
-                                >
-                                    Sign Out
+                                    Biodata
                                 </li>
                                 <li
                                     onClick={() => navigate('/')}
