@@ -44,6 +44,7 @@ const Footer = () => {
                                 } 
                             }}
                             type='button'
+                            onClick={() => window.open('https://www.instagram.com/', '_blank')}
                         >
                             <img
                                 className='h-8 self-center mx-auto my-auto mt-1'
@@ -63,6 +64,7 @@ const Footer = () => {
                                 } 
                             }}
                             type='button'
+                            onClick={() => window.open('https://www.tiktok.com/', '_blank')}
                         >
                             <img
                                 className='h-8 self-center mx-auto my-auto'
@@ -82,6 +84,7 @@ const Footer = () => {
                                 } 
                             }}
                             type='button'
+                            onClick={() => window.open('https://www.twitter.com/', '_blank')}
                         >
                             <img
                                 className='h-7 self-center mx-auto my-auto mt-1'
@@ -120,8 +123,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-[80vw] h-1 rounded-full border-white bg-white self-center mx-auto my-7'/>
-            <div className='text-center text-white text-sm sm:text-lg'>
-                &copy; Tim Pengembang Parent Link 2023.
+            <div className='flex text-center text-white text-sm sm:text-lg justify-center items-center'>
+                <div className='relative group flex w-auto'>
+                    &copy; Tim Pengembang Parent Link 2023.
+                    <div className="absolute -right-8 opacity-10 lg:group-hover:opacity-100 transition-all duration-500 ml-2">
+                    ❤️️
+                    </div>
+                </div>
             </div>
         </motion.div>
     )
