@@ -1,8 +1,13 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const Notifikasi = () => {
     return (
-        <div className='flex flex-col w-full justify-start items-center font-poppins gap-8'>
+        <motion.div 
+            className='flex flex-col w-full justify-start items-center font-poppins gap-8'
+            initial={{x: 100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <div className='flex flex-col gap-8 w-[95vw] sm:w-[700px] justify-start items-center text-center'>
                 <div className='flex text-2xl sm:text-4xl font-bold'>
                     Nyalakan Notifikasi?
@@ -20,7 +25,7 @@ const Notifikasi = () => {
                 </div>
             </div>
             
-        </div>
+        </motion.div>
     )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const RiwayatStatusKuliah = () => {
     const riwayatStatusData = [
@@ -9,7 +10,11 @@ const RiwayatStatusKuliah = () => {
     ];
 
     return (
-        <div className="flex text-black w-full">
+        <motion.div 
+            className="flex text-black w-full"
+            initial={{y: 100, opacity: 0}}
+            whileInView={{y: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <table className="w-full border-t border-b border-collapse">
                 <thead>
                     <tr className="bg-cust-darker-blue text-white">
@@ -30,7 +35,7 @@ const RiwayatStatusKuliah = () => {
                     ))}
                 </tbody>
             </table>
-        </div>
+        </motion.div>
     );
 };
 

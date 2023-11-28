@@ -11,7 +11,11 @@ const Akademik = () => {
     const [activeTab, setActiveTab] = useState('pengumuman');
 
     return (
-        <div className='flex flex-col-reverse sm:flex-row min-h-screen w-full justify-center sm:justify-start items-center sm:items-start font-poppins'>
+        <motion.div 
+            className='flex flex-col-reverse sm:flex-row min-h-screen w-full justify-center sm:justify-start items-center sm:items-start font-poppins'
+            initial={{x: -100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <div className='text-black mt-5 sm:mt-32 w-4/5'>
                 {activeTab === 'pengumuman' ? (
                     <Pengumuman />
@@ -23,7 +27,11 @@ const Akademik = () => {
                     <Absensi />
                 ) : (<NotFound/>)}
             </div>
-            <div className='flex flex-row sm:flex-col w-[95vw] sm:w-1/5  h-auto border-4 border-cust-darker-blue py-8 mt-24 sm:mt-32 text-sm sm:text-xl font-normal justify-center sm:justify-end items-center mr-0 sm:mr-44 rounded-3xl gap-0 sm:gap-10'>
+            <motion.div 
+                className='flex flex-row sm:flex-col w-[95vw] sm:w-1/5  h-auto border-4 border-cust-darker-blue py-8 mt-24 sm:mt-32 text-sm sm:text-xl font-normal justify-center sm:justify-end items-center mr-0 sm:mr-44 rounded-3xl gap-0 sm:gap-10'
+                initial={{x: 100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+            >
                 <motion.button 
                     className='flex flex-row w-2/6 sm:w-48 gap-1 group justify-center sm:justify-end'
                     onClick={() => setActiveTab('pengumuman')}      
@@ -108,8 +116,8 @@ const Akademik = () => {
                         />
                     </motion.div>
                 </motion.button>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 

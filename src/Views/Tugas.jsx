@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ArrowDown from '../assets/ArrowDown.svg';
+import { motion } from 'framer-motion';
 
 const Tugas = () => {
     const tugasData = [
@@ -22,7 +23,11 @@ const Tugas = () => {
     // const [activeTab, setActiveTab] = useState('jadwal');
 
     return (
-        <div className='flex flex-col h-auto w-full justify-start items-center font-poppins gap-8 text-black'>
+        <motion.div 
+            className='flex flex-col h-auto w-full justify-start items-center font-poppins gap-8 text-black'
+            initial={{x: -100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <div className='flex flex-col gap-8 w-[95vw] sm:w-[900px] justify-start items-center text-center'>
                 <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[95vw] sm:w-[700px] text-center py-2 text-4xl'>
                     TUGAS
@@ -89,7 +94,7 @@ const Tugas = () => {
                     </table>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

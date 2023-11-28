@@ -11,6 +11,7 @@ import ArrowRight from '../assets/ArrowRight1.svg';
 const Kontak = () => {
     // const [activeTab, setActiveTab] = useState('editProfile');
 
+
     const arrowVariantsRight = {
         hover: {
         x: [0, 10], // Define a simple x-axis wiggle animation
@@ -35,10 +36,14 @@ const Kontak = () => {
 
     return (
         <div className='flex flex-col sm:flex-row min-h-screen w-full justify-start sm:justify-start items-center sm:items-start font-poppins'>
-            <div className='flex flex-row sm:flex-col w-[95vw] sm:w-1/5 h-auto border-4 border-cust-darker-blue py-8 mt-24 sm:mt-32 text-sm sm:text-xl font-normal justify-center sm:justify-start items-center ml-0 sm:ml-44 rounded-3xl gap-0 sm:gap-10'>
+            <motion.div 
+                className='flex flex-row sm:flex-col w-[95vw] sm:w-1/5 h-auto border-4 border-cust-darker-blue py-8 mt-24 sm:mt-32 text-sm sm:text-xl font-normal justify-center sm:justify-start items-center ml-0 sm:ml-44 rounded-3xl gap-0 sm:gap-10'
+                initial={{x: -100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+            >
                 <motion.button 
                     className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
-                    // onClick={() => setActiveTab('editProfile')}    
+                    onClick={() => window.open('https://mail.google.com/mail/u//', '_blank')} 
                 >
                     <motion.div 
                         className='hidden sm:inline items-center'
@@ -59,7 +64,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
-                    // onClick={() => setActiveTab('editProfile')}      
+                    onClick={() => window.open('https://www.instagram.com/', '_blank')}    
                 >
                     <motion.div 
                         className='hidden sm:inline items-center'
@@ -80,7 +85,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
-                    // onClick={() => setActiveTab('notifikasi')}      
+                    onClick={() => window.open('https://www.twitter.com/', '_blank')}
                 >
                     <motion.div 
                         className='hidden sm:inline items-center'
@@ -101,7 +106,7 @@ const Kontak = () => {
                 </motion.button>
                 <motion.button 
                     className='flex flex-row w-1/4 sm:w-48 gap-0 sm:gap-1 group justify-center sm:justify-start'
-                    // onClick={() => setActiveTab('akses')}      
+                    onClick={() => window.open('https://www.ub.ac.id/', '_blank')}   
                 >
                     <motion.div 
                         className='hidden sm:inline items-center'
@@ -120,8 +125,12 @@ const Kontak = () => {
                         Website
                     </motion.div>
                 </motion.button>
-            </div>
-            <div className='flex flex-col w-full justify-start items-center font-poppins gap-8 text-black mt-5 sm:mt-32'>
+            </motion.div>
+            <motion.div 
+                className='flex flex-col w-full justify-start items-center font-poppins gap-8 text-black mt-5 sm:mt-32'
+                initial={{x: 100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+            >
                 <div className='flex flex-col gap-8 w-[95vw] sm:w-[900px] justify-start items-center text-center'>
                     <div className='font-bold text-white bg-cust-darker-blue hover:text-cust-orange rounded-full w-[95vw] sm:w-[700px] text-center py-2 text-4xl'>
                     CONTACT US
@@ -152,7 +161,7 @@ const Kontak = () => {
                         </motion.div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

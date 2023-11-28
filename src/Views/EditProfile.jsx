@@ -1,8 +1,13 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const EditProfile = () => {
     return (
-        <div className='flex flex-col w-full justify-start items-center font-poppins'>
+        <motion.div 
+            className='flex flex-col w-full justify-start items-center font-poppins'
+            initial={{x: 100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <div className='font-bold w-[95vw] sm:w-[700px] text-3xl sm:text-4xl text-center mb-10'>
                 Edit Profil
             </div>
@@ -62,7 +67,7 @@ const EditProfile = () => {
                     Edit
                 </button>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

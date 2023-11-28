@@ -92,7 +92,7 @@ const NavBar = () => {
                                     Biodata
                                 </li>
                                 <li
-                                    onClick={() => navigate('/')}
+                                    onClick={() => navigate('/no-login')}
                                     className='py-2 px-4 hover:bg-cust-red hover:text-white cursor-pointer'
                                 >
                                     Sign Out

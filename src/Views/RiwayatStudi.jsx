@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const RiwayatStudi = () => {
     const RiwayatStudiData = [
@@ -15,7 +16,11 @@ const RiwayatStudi = () => {
     ];
 
     return (
-        <div className="text-black">
+        <motion.div 
+            className="text-black"
+            initial={{y: 100, opacity: 0}}
+            whileInView={{y: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}    
+        >
             <table className="w-full border border-collapse">
                 <thead>
                     <tr className="bg-cust-darker-blue text-white">
@@ -38,7 +43,7 @@ const RiwayatStudi = () => {
                     ))}
                 </tbody>
             </table>
-        </div>
+        </motion.div>
     );
 };
 

@@ -1,16 +1,25 @@
 import React from 'react'
 import Google from "../assets/google.svg"
 import {  useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const SignUp = () => {
     const navigate = useNavigate();
 
     return (
         <div className="flex flex-col sm:flex-row h-screen min-w-full font-poppins font-bold text-center text-lg sm:text-xl justify-center items-center">
-            <div className='flex h-full w-full sm:w-1/2 bg-cust-darker-blue font-extrabold text-white text-3xl text-center justify-center items-center pt-16 sm:pt-0'>
+            <motion.div 
+                className='flex h-full w-full sm:w-1/2 bg-cust-darker-blue font-extrabold text-white text-3xl text-center justify-center items-center pt-16 sm:pt-0'
+                initial={{x: -100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+            >
                 &copy; Parent<span className='text-cust-orange italic font-black'>Link</span>
-            </div>
-            <div className='flex flex-col h-full w-[95vw] sm:w-1/2 font-extrabold text-black text-lg sm:text-xl text-center justify-center items-center gap-4 my-10'>
+            </motion.div>
+            <motion.div 
+                className='flex flex-col h-full w-[95vw] sm:w-1/2 font-extrabold text-black text-lg sm:text-xl text-center justify-center items-center gap-4 my-10'
+                initial={{x: 100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+            >
                 <div className='flex font-black text-2xl sm:text-3xl sm:mt-0'>
                     Daftar
                 </div>
@@ -32,7 +41,7 @@ const SignUp = () => {
                     </div>
                     <div className='w-[30vw] sm:w-44 h-1 bg-black rounded-full'/>
                 </div>
-                <div className='text-left font-extralight w-[95vw] sm:w-[400px]'>
+                <div className='text-left font-normal w-[95vw] sm:w-[400px]'>
                     <div className=''>
                         Email*
                     </div>
@@ -41,7 +50,7 @@ const SignUp = () => {
                         placeholder='emailAnda@gmail.com'
                     />
                 </div>
-                <div className='text-left font-extralight w-[95vw] sm:w-[400px]'>
+                <div className='text-left font-normal w-[95vw] sm:w-[400px]'>
                     <div className=''>
                         Password*
                     </div>
@@ -66,7 +75,7 @@ const SignUp = () => {
                         Login
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

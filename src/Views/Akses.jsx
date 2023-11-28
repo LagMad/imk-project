@@ -1,16 +1,21 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const Akses = () => {
     return (
-        <div className='flex flex-col w-full justify-start items-center font-poppins'>
+        <motion.div 
+            className='flex flex-col w-full justify-start items-center font-poppins'
+            initial={{x: 100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {type: "spring", duration: 5, damping: 15, stiffness: 100}}}
+        >
             <div className='flex flex-col gap-8 w-[95vw] sm:w-[700px] justify-start items-center text-center'>
-                <div className='font-bold w-[95vw] sm:w-[700px] text-2xl sm:text-4xl text-center mb-10'>
+                <div className='font-bold w-[95vw] sm:w-[700px] text-2xl sm:text-4xl text-center mb-0 sm:mb-10'>
                     Atur Akses
                 </div>
                 <div className='flex text-[16px] sm:text-xl w-[80vw] sm:w-auto'>
                     Melalui pengaturan privasi, kami memberikan kendali penuh kepada Anda untuk melindungi dan menghormati keamanan data akademis anak tercinta.
                 </div>
-                <div className='flex flex-col sm:flex-row gap-12 mb-10 sm:mb-0'>
+                <div className='flex flex-col sm:flex-row gap-12'>
                     <div className='flex flex-col gap-2 font-semibold'>
                         Email Akses
                         <div className='font-normal'>
@@ -37,7 +42,7 @@ const Akses = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
