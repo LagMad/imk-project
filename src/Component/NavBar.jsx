@@ -14,7 +14,7 @@ const NavBar = () => {
     };
 
     return (
-        <div className='flex flex-row fixed justify-center items-center text-center w-screen h-20 bg-cust-darker-blue drop-shadow-2xl text-white font-poppins mx-auto'>
+        <div className='flex flex-row fixed z-10 justify-center items-center text-center w-screen h-20 bg-cust-darker-blue drop-shadow-2xl text-white font-poppins mx-auto'>
             <button 
                 className='w-1/2 2xl:w-1/4 font-extrabold text-lg 2xl:text-2xl mx-auto'
                 onClick={() => navigate('/')}
